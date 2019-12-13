@@ -24,7 +24,8 @@ export class NavComponent implements OnInit {
 
   loggedIn() {
     const token = localStorage.getItem('token');
-    return !!token!
+    // tslint:disable-next-line: no-non-null-assertion
+    return !!token!;
   }
 
   logout() {
